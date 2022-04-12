@@ -1,10 +1,10 @@
 type Influencer = {
-    influencerUsername: String;
-    instagramUsername: String;
-    category1: String;
-    category2: String;
+    influencerUsername: string;
+    instagramUsername: string;
+    category1: string;
+    category2: string;
     followers: number;
-    audienceCountry: String;
+    audienceCountry: string;
     authenticEngagement: number;
     engagementAvg: number
 }
