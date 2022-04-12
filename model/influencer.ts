@@ -1,4 +1,4 @@
-type Influencer = {
+export type Influencer = {
     influencerUsername: string;
     instagramUsername: string;
     category1: string;
@@ -9,4 +9,8 @@ type Influencer = {
     engagementAvg: number
 }
 
-export default Influencer
+
+export type TopResponse = {
+    group: string,
+    top: Influencer
+}

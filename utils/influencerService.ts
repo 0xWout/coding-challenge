@@ -1,13 +1,10 @@
 import fs from 'fs';
-import Influencer from 'model/influencer';
+import Influencer, { TopResponse } from 'model/influencer';
 import Papa from 'papaparse';
 const _ = require('lodash');
 
 const csvFilePath = './data/instagram_influencers.csv';
-export async function getTopInfuencers(
-  group: string,
-  top: string,
-) {
+export async function getTopInfuencers(group: string, top: string): Promise<TopResponse[]> {
   var json = (await parseCsv()) || [];
   var groupedInfluencers: Array<Map<String, any>> = _.groupBy(json, group);
   const max = (data) => _.maxBy(data, top);
