@@ -13,13 +13,19 @@
   "author": "Wout Buelens",
   "license": "ISC",
   "dependencies": {
+    "fs": "^0.0.1-security",
+    "lodash": "^4.17.21",
+    "micro": "^9.3.4",
     "next": "12.1.4",
+    "node-jq": "^2.3.3",
     "papaparse": "^5.3.2",
     "react": "18.0.0",
     "react-dom": "18.0.0"
   },
   "devDependencies": {
+    "@types/lodash": "^4.14.181",
     "@types/node": "17.0.23",
+    "@types/papaparse": "^5.3.2",
     "@types/react": "18.0.1",
     "@types/react-dom": "18.0.0",
     "eslint-config-next": "12.1.4",
